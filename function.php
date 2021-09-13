@@ -103,20 +103,92 @@
         //Q6 Write a program to age tell whether the person is eligible for vote or not  using function in php..
         echo "<h3>Q6 Write a program to age tell whether the person is eligible for vote or not using function in php.</h3>";
 
-        function square($age) {
+
+        function Vote($age) {
             if( $age >= 18){
-                $V_age = echo "The person is eligible of Vote";
+                 echo "You are age($age) year old. So person is eligible of Vote";
             }
             else{
-                $V_age = echo "The person is not eligible of Vote";
+                echo "You are age($age) year old. So person is Not eligible of Vote";
             }
             echo "<br>";
-            return $V_age;
+      
         }
-        $sq=Vote(22);    ///////////Calling
-        echo "Square of $n is $sq";
-        echo "Square of $n is ".(square(4));    ///////////Calling
+        Vote(33);    ///////////Calling
+        Vote(15); 
         
+
+
+        // Q6 Write a program to print table 1 to 10  using function in php..
+         echo "<h3>Q6 Write a program to print table 1 to 10  using function in php.</h3>";
+
+         function TableOne() {
+             
+             for ($i=1; $i <=10; $i++) { 
+                
+                for ($j=1; $j <= 10; $j++) { 
+                    echo "&nbsp;&nbsp;";
+                  $t = $i * $j;
+                  echo $t."&nbsp;&nbsp;&nbsp;&nbsp; ";  
+                }
+                echo "<br>";
+             }
+             echo " &nbsp;<br>";
+             
+         }
+        TableOne();    ///////////Calling;
+
+        // Q7 Write a program to print patter using function in php..
+        echo "<h3>Q7 Write a program to print patter using function in php.</h3>";
+
+        function patter() {
+            
+            for ($i=1; $i <=8; $i++) { 
+               
+               for ($j=1; $j <= $i; $j++) { 
+                  
+                    echo "&nbsp;*";  
+                
+               }
+               echo "<br>";
+            }
+            echo "<br>";
+            
+        }
+        patter();    ///////////Calling;
+
+          // Q8 Write a program to print patter R using function in php..
+          echo "<h3>Q8 Write a program to print patter R using function in php.</h3>";
+
+          function patterR() {
+              
+              for ($i=1; $i <=8; $i++) { 
+                 
+                 for ($j=1; $j <= 8; $j++) { 
+                    if ($i==1 || $i== 8 || $j == 1 || $j==8)
+                      echo "&nbsp;*";  
+                    else
+                        echo "&nbsp;&nbsp;&nbsp;";
+                  
+                 }
+                 echo "<br>";
+              }
+            for ($i=1; $i <=8; $i++) { 
+                echo "&nbsp;*"; 
+                for ($j=1; $j <= $i; $j++) { 
+                    if ($i <= $j && $j >= $i)
+                        echo "&nbsp;*";  
+                    else
+                        echo "&nbsp;&nbsp;&nbsp;&nbsp;";
+                
+                }
+             echo "<br>";
+          }
+              echo "<br>";
+              
+          }
+          patterR();    ///////////Calling;
+         
     ?>
 </body>
 </html>
